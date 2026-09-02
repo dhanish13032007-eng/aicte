@@ -1,0 +1,33 @@
+{
+  "feature_columns": [
+    "voltage_0h",
+    "current_0h",
+    "resistance_0h",
+    "capacitance_0h",
+    "power_consumption_0h",
+    "leakage_current_0h",
+    "frequency_0h",
+    "temperature_0h",
+    "temperature_rise_0h",
+    "voltage_24h",
+    "current_24h",
+    "resistance_24h",
+    "capacitance_24h",
+    "power_consumption_24h",
+    "leakage_current_24h",
+    "frequency_24h",
+    "temperature_24h",
+    "temperature_rise_24h",
+    "voltage_96h",
+    "current_96h",
+    "resistance_96h",
+    "capacitance_96h",
+    "power_consumption_96h",
+    "leakage_current_96h",
+    "frequency_96h",
+    "temperature_96h",
+    "temperature_rise_96h"
+  ],
+  "contamination": 0.1,
+  "n_estimators": 200
+}

@@ -1,0 +1,39 @@
+{
+  "feature_columns": [
+    "power_consumption_0h",
+    "power_consumption_24h",
+    "power_consumption_96h",
+    "power_consumption_delta_0_24",
+    "power_consumption_delta_24_96",
+    "power_consumption_delta_0_96",
+    "power_consumption_pct_0_24",
+    "power_consumption_pct_24_96",
+    "power_consumption_pct_0_96",
+    "power_consumption_slope_0_24",
+    "power_consumption_slope_24_96",
+    "power_consumption_slope_0_96",
+    "power_consumption_acceleration",
+    "power_consumption_variance",
+    "power_consumption_std",
+    "power_consumption_range",
+    "power_consumption_lot_zscore",
+    "power_consumption_lot_madscore",
+    "vi_product_96h"
+  ],
+  "target": "power_consumption_168h",
+  "mae": 0.1796,
+  "rmse": 0.7452,
+  "r2": 0.963,
+  "top_features": {
+    "power_consumption_96h": 0.3198,
+    "power_consumption_24h": 0.3014,
+    "power_consumption_delta_0_96": 0.1064,
+    "power_consumption_0h": 0.0764,
+    "power_consumption_delta_24_96": 0.076,
+    "power_consumption_delta_0_24": 0.0429,
+    "vi_product_96h": 0.0272,
+    "power_consumption_pct_0_96": 0.0061,
+    "power_consumption_pct_24_96": 0.0059,
+    "power_consumption_acceleration": 0.0056
+  }
+}

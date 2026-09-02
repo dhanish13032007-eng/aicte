@@ -1,0 +1,38 @@
+{
+  "feature_columns": [
+    "resistance_0h",
+    "resistance_24h",
+    "resistance_96h",
+    "resistance_delta_0_24",
+    "resistance_delta_24_96",
+    "resistance_delta_0_96",
+    "resistance_pct_0_24",
+    "resistance_pct_24_96",
+    "resistance_pct_0_96",
+    "resistance_slope_0_24",
+    "resistance_slope_24_96",
+    "resistance_slope_0_96",
+    "resistance_acceleration",
+    "resistance_variance",
+    "resistance_std",
+    "resistance_range",
+    "resistance_lot_zscore",
+    "resistance_lot_madscore"
+  ],
+  "target": "resistance_168h",
+  "mae": 225.8994,
+  "rmse": 492.6685,
+  "r2": 0.7368,
+  "top_features": {
+    "resistance_24h": 0.7148,
+    "resistance_96h": 0.1956,
+    "resistance_0h": 0.0266,
+    "resistance_pct_24_96": 0.0093,
+    "resistance_lot_zscore": 0.007,
+    "resistance_variance": 0.0068,
+    "resistance_delta_0_96": 0.0063,
+    "resistance_slope_24_96": 0.0054,
+    "resistance_lot_madscore": 0.0047,
+    "resistance_pct_0_24": 0.0047
+  }
+}

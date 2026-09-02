@@ -1,0 +1,38 @@
+{
+  "feature_columns": [
+    "temperature_0h",
+    "temperature_24h",
+    "temperature_96h",
+    "temperature_delta_0_24",
+    "temperature_delta_24_96",
+    "temperature_delta_0_96",
+    "temperature_pct_0_24",
+    "temperature_pct_24_96",
+    "temperature_pct_0_96",
+    "temperature_slope_0_24",
+    "temperature_slope_24_96",
+    "temperature_slope_0_96",
+    "temperature_acceleration",
+    "temperature_variance",
+    "temperature_std",
+    "temperature_range",
+    "temperature_lot_zscore",
+    "temperature_lot_madscore"
+  ],
+  "target": "temperature_168h",
+  "mae": 1.5568,
+  "rmse": 3.0022,
+  "r2": 0.8928,
+  "top_features": {
+    "temperature_range": 0.5348,
+    "temperature_variance": 0.1673,
+    "temperature_96h": 0.1397,
+    "temperature_std": 0.036,
+    "temperature_delta_0_96": 0.0241,
+    "temperature_lot_zscore": 0.0232,
+    "temperature_24h": 0.0193,
+    "temperature_lot_madscore": 0.0127,
+    "temperature_slope_24_96": 0.0085,
+    "temperature_0h": 0.0071
+  }
+}
