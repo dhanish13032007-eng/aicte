@@ -1,34 +1,39 @@
-# Node dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-dist/
-build/
-
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
+*.egg-info/
 .venv/
-ENV/
+venv/
+.pytest_cache/
+.mypy_cache/
+alembic/versions/__pycache__/
 
-# Databases & local run logs
-*.db
-*.sqlite3
-*.log
+# Node / Next.js
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
 
-# IDE & OS
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Local data / uploads / generated state
+backend/data/
+backend/uploads/
+backend/*.db
+backend/*.sqlite3
+frontend/.env
+frontend/.env.local
+
+# IDE/OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# Environment variables
-.env
-.env.local
+# Logs
+*.log
+npm-debug.log*

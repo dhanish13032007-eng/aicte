@@ -1,0 +1,33 @@
+# Core API
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+
+# Data layer
+SQLAlchemy==2.0.41
+alembic==1.15.2
+psycopg[binary]==3.2.10        # only needed for PostgreSQL; harmless on SQLite demo
+
+# Validation / settings
+pydantic==2.11.7
+pydantic-settings==2.9.1
+email-validator==2.2.0
+
+# Security
+PyJWT==2.10.1
+bcrypt==4.3.0
+
+# Background jobs / scheduling
+APScheduler==3.11.1
+
+# Document processing (text-based PDFs)
+pdfplumber==0.11.7
+
+# HTTP client (AI provider adapter, health checks)
+httpx==0.28.1
+
+# Storage (S3/MinIO-compatible object storage for deployed environments)
+boto3==1.38.41
+
+# Testing
+pytest==8.3.5

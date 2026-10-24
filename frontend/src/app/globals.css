@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #12345a;
+  --blue: #1d4f91;
+  --saffron: #e87524;
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --text: #172b4d;
+  --textmuted: #667085;
+  --line: #dce3ec;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), Inter, system-ui, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+@layer base {
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  [tabindex] {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-line rounded-md shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium
+      border transition-colors
+      disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-navy-700 text-white border-navy-700 hover:bg-navy-800;
+  }
+  .btn-accent {
+    @apply btn bg-saffron text-white border-saffron hover:bg-saffron-dark;
+  }
+  .btn-secondary {
+    @apply btn bg-surface text-text border-line hover:bg-navy-50;
+  }
+  .btn-danger {
+    @apply btn bg-surface text-danger border-danger/40 hover:bg-danger/5;
+  }
+  .input {
+    @apply w-full rounded-md border border-line bg-white px-3 py-2 text-sm text-text
+      placeholder:text-textmuted/70 focus:outline-none focus:ring-2 focus:ring-navy-600/40
+      focus:border-navy-600;
+  }
+  .label {
+    @apply block text-xs font-semibold text-text mb-1;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold border;
+  }
+  .th {
+    @apply px-3 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wide text-textmuted bg-navy-50/60 border-b border-line;
+  }
+  .td {
+    @apply px-3 py-2.5 text-sm text-text border-b border-line/70 align-top;
+  }
+  .link {
+    @apply text-navy-600 hover:underline underline-offset-2;
+  }
+  .prose-plain {
+    @apply text-sm leading-relaxed text-text whitespace-pre-wrap;
+  }
+}
